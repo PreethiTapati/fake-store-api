@@ -41,7 +41,7 @@ app.use(express.static(path.join(PATH, 'public')));
 app.use(logger);
 
 // Routes
-app.use( userRoutes);
+app.use( '/user', userRoutes);
 //app.use('/api/home', storeRoutes);
 
 
