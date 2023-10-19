@@ -42,6 +42,10 @@ app.use(logger);
 // Routes
 app.use('/', userRoutes);
 app.use('/api/home', storeRoutes);
+//app.use( '/user', userRoutes);
+//app.use('/api/home', storeRoutes);
+
+
 
 // Error handling for 404
 app.use((req, res) => {
