@@ -1,13 +1,11 @@
-//import express from 'express';
+import express from 'express';
 
-//import storeControllers from '../controllers/store.js';
+import storeControllers from '../controllers/store.js';
 
-//const router = express.Router();
+const router = express.Router();
 
-
-//router.get('/', storeControllers.main);
+router.get('/', storeControllers.home);
 //router.post('/sign-up', storeControllers.signUp);
 //router.post('/login', storeControllers.logIn);
 
-
-//export default router;
+export default router;

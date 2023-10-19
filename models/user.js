@@ -16,17 +16,15 @@ class User {
     }
 
     static getUser = () => {
-        return users
+        return users;
     };
 
-    static getUserById = (id) => {
-        return users.find((user) => user.id === id)
-    }
+    static getUserByEmail = (email) => {
+        return users.find((user) => user.email === email);
+    };
     addUser = () => {
-        users.push(this)
-    }
-
-
+        users.push(this);
+    };
 }
 
-export default User; 
+export default User;
